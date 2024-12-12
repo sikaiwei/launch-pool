@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div >
+    <div>
       <div className="flex space-x-2">
         <div>Item 1</div>
         <div>Item 2</div>
@@ -37,7 +37,9 @@ export default function Home() {
       <div className="underline decoration-double">Decoration Double</div>
       <div className="underline decoration-dotted">Decoration Dotted</div>
       <div className="underline decoration-dashed">Decoration Dashed</div>
-      <div className="underline decoration-wavy decoration-green-300 underline-offset-4">Decoration Wavy</div>
+      <div className="underline decoration-wavy decoration-green-300 underline-offset-4">
+        Decoration Wavy
+      </div>
 
       <div className="underline underline-offset-2">Offset 2</div>
       <div className="underline underline-offset-4">Offset 4</div>
@@ -62,9 +64,9 @@ export default function Home() {
       <div className="bg-black text-white w-[300px]">Width 300px</div>
 
       <div className="bg-black text-white mx-auto max-w-xs">
-        Tailwind CSS is the only framework that I've
-        seen scale on large teams. It’s easy to customize,
-        adapts to any design, and the build size is tiny.
+        Tailwind CSS is the only framework that I've seen scale on large teams.
+        It’s easy to customize, adapts to any design, and the build size is
+        tiny.
       </div>
 
       {/* <div className="flex items-end">
@@ -79,50 +81,86 @@ export default function Home() {
         <div class="bg-black text-white h-screen">Height 100vh</div>
       </div> */}
 
-      <div class="relative w-1/2 h-12 bg-red-200">
+      <div className="relative w-1/2 h-12 bg-red-200">
         <p>Parent</p>
-        <div class="absolute bottom-0 right-0 bg-red-700">
+        <div className="absolute bottom-0 right-0 bg-red-700">
           <p>Child</p>
         </div>
       </div>
 
-      <div class="relative w-32 h-32 bg-red-200">
-        <div class="absolute w-16 h-16 top-0 left-0 bg-red-700"></div>
+      <div className="relative w-32 h-32 bg-red-200">
+        <div className="absolute w-16 h-16 top-0 left-0 bg-red-700"></div>
       </div>
 
-      <div class="relative w-32 h-32 bg-red-200">
-        <div class="absolute h-16 top-0 inset-x-0 bg-red-700 overflow-auto">ddddddeessseeeddfffff</div>
+      <div className="relative w-32 h-32 bg-red-200">
+        <div className="absolute h-16 top-0 inset-x-0 bg-red-700 overflow-auto">
+          ddddddeessseeeddfffff
+        </div>
       </div>
 
-      <div class="relative w-32 h-32 bg-red-200">
-        <div class="absolute h-16 bottom-0 inset-x-0 bg-red-700"></div>
+      <div className="relative w-32 h-32 bg-red-200">
+        <div className="absolute h-16 bottom-0 inset-x-0 bg-red-700"></div>
       </div>
 
       <div>
         Tailwind CSS is the only framework that
-        <span class="text-red-500 inline">(Inline)</span>
+        <span className="text-red-500 inline">(Inline)</span>
         I've seen scale on large teams.
-        <span class="text-red-500 inline-block">(Inline-block)</span>
+        <span className="text-red-500 inline-block">(Inline-block)</span>
         It’s easy to customize, adapts to any design,
-        <span class="text-red-500 block">(Block)</span>
+        <span className="text-red-500 block">(Block)</span>
         and the build size is tiny.
-        <span class="text-red-500 hidden">(Hidden)</span>
+        <span className="text-red-500 hidden">(Hidden)</span>
       </div>
 
-      <div class="relative h-24">
-        <div class="absolute left-0 w-24 h-24 bg-red-100 z-40">1</div>
-        <div class="absolute left-20 w-24 h-24 bg-red-200 z-30">2</div>
-        <div class="absolute left-40 w-24 h-24 bg-red-500 z-20">3</div>
-        <div class="absolute left-60 w-24 h-24 bg-red-700 z-10">4</div>
-        <div class="absolute left-80 w-24 h-24 bg-red-900">5</div>
+      <div className="relative h-24">
+        <div className="absolute left-0 w-24 h-24 bg-red-100 z-40">1</div>
+        <div className="absolute left-20 w-24 h-24 bg-red-200 z-30">2</div>
+        <div className="absolute left-40 w-24 h-24 bg-red-500 z-50">3</div>
+        <div className="absolute left-60 w-24 h-24 bg-red-700 z-10">4</div>
+        <div className="absolute left-80 w-24 h-24 bg-red-900">5</div>
       </div>
 
+      <div className="h-24">
+        <div className="w-24 h-24 bg-red-100 float-left">1</div>
+        <div className="w-24 h-24 bg-red-200 inline-block">2</div>
+      </div>
 
+      <div
+        className="w-64 h-64 bg-cover bg-no-repeat bg-center "
+        style={{
+          backgroundImage: `url('https://q8.itc.cn/q_70/images03/20240406/42b4180e966648c09fa4cf8aaacd177f.jpeg')`,
+        }}
+      ></div>
 
+      <div class="h-24 bg-gradient-to-l from-red-500 to-blue-500"></div>
+      <div class="w-96  shadow-inner shadow-lime-900">
+        Consectetur velit laboris tempor laboris qui consequat eu minim ipsum
+        nulla culpa aliquip ad.
+      </div>
 
+      <div class="flex justify-center -space-x-24">
+        <div class="mix-blend-multiply bg-red-500">
+          Id ex deserunt velit excepteur deserunt tempor eu aliquip ipsum labore
+          laboris.
+        </div>
+        <div class="mix-blend-multiply bg-blue-500">
+          Adipisicing voluptate magna aute sunt consequat irure sint.
+        </div>
+      </div>
 
-
-
+      <div class="w-96 m-5 p-5 border-2">
+        Amet commodo nisi quis irure velit Lorem enim anim commodo sunt aliquip
+        officia quis.
+      </div>
+      <div class="w-96 m-5 p-5 border-x-4">
+        Amet commodo nisi quis irure velit Lorem enim anim commodo sunt aliquip
+        officia quis.
+      </div>
+      <div class="w-96 m-5 p-5 border-y-8">
+        Amet commodo nisi quis irure velit Lorem enim anim commodo sunt aliquip
+        officia quis.
+      </div>
     </div>
   );
 }

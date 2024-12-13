@@ -251,6 +251,69 @@ export default function Home() {
       <div className="h-[1000px] bg-black"></div>
       <div id="bottom" className="h-4 text-center">Bottom</div>
 
+      <div className="columns-xs">
+        <div className="w-full m-2 border-4 border-red-500">Proident ipsum consequat dolor deserunt.</div>
+        <div className="w-full m-2 border-4 border-yellow-500">Proident ipsum consequat dolor deserunt.</div>
+        <div className="w-full m-2 border-4 border-green-500">Proident ipsum consequat dolor deserunt.</div>
+        <div className="w-full m-2 border-4 border-blue-500">Proident ipsum consequat dolor deserunt.</div>
+      </div>
+
+      <div className="columns-1">
+        <div className="w-60 m-2 border-4 border-red-500 aspect-square">Proident ipsum consequat dolor deserunt.</div>
+        <div className="w-60 m-2 border-4 border-blue-500 aspect-video">Proident ipsum consequat dolor deserunt.</div>
+      </div>
+
+      <div className="flex w-full h-72 bg-black ">
+        <div className="p-10 border border-red-500 bg-red-200">1</div>
+        <div className="p-10 border border-yellow-500 bg-yellow-200">2</div>
+        <div className="p-10 border border-green-500 bg-green-200">3</div>
+        <div className="p-10 border border-blue-500 bg-blue-200">4</div>
+      </div>
+
+      <div className="flex w-full h-72 bg-black items-center ">
+        <div className="p-10 border border-red-500 bg-red-200">1</div>
+        <div className="p-10 border border-yellow-500 bg-yellow-200">2</div>
+        <div className="p-10 border border-green-500 bg-green-200">3</div>
+        <div className="p-10 border border-blue-500 bg-blue-200">4</div>
+      </div>
+
+      <div className="flex w-full h-72 bg-black items-center  justify-around">
+        <div className="p-10 border border-red-500 bg-red-200">1</div>
+        <div className="p-10 border border-yellow-500 bg-yellow-200">2</div>
+        <div className="p-10 border border-green-500 bg-green-200">3</div>
+        <div className="p-10 border border-blue-500 bg-blue-200">4</div>
+      </div>
+
+      <div className="flex w-full h-72 bg-black   justify-around">
+        <div className="p-10 border border-red-500 bg-red-200">1</div>
+        <div className="p-10 border border-yellow-500 bg-yellow-200">2</div>
+        <div className="p-10 border border-green-500 bg-green-200">3</div>
+        <div className="p-10 border border-blue-500 bg-blue-200">4</div>
+      </div>
+
+      <div className="flex flex-wrap w-full h-72 bg-black items-center justify-around">
+        <div className="p-10 border border-red-500 bg-red-200">1</div>
+        <div className="p-10 border border-yellow-500 bg-yellow-200">2</div>
+        <div className="p-10 w-[300px] border border-green-500 bg-green-200">3</div>
+        <div className="p-10 border border-blue-500 bg-blue-200">4</div>
+      </div>
+
+      <div className="flex flex-col w-72 bg-black">
+        <div className="p-10 border border-red-500 bg-red-200">1</div>
+        <div className="p-10 border border-yellow-500 bg-yellow-200">2</div>
+        <div className="p-10 border border-green-500 bg-green-200">3</div>
+        <div className="p-10 border border-blue-500 bg-blue-200">4</div>
+      </div>
+
+      <div className="flex flex-col w-72 bg-black gap-4">
+        <div className="p-10 border border-red-500 bg-red-200">1</div>
+        <div className="p-10 border border-yellow-500 bg-yellow-200">2</div>
+        <div className="p-10 border border-green-500 bg-green-200">3</div>
+        <div className="p-10 border border-blue-500 bg-blue-200">4</div>
+      </div>
+
+
+
 
 
     </div>

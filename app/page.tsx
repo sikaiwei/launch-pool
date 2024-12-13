@@ -133,65 +133,65 @@ export default function Home() {
         }}
       ></div>
 
-      <div class="h-24 bg-gradient-to-l from-red-500 to-blue-500"></div>
-      <div class="w-96  shadow-inner shadow-lime-900">
+      <div className="h-24 bg-gradient-to-l from-red-500 to-blue-500"></div>
+      <div className="w-96  shadow-inner shadow-lime-900">
         Consectetur velit laboris tempor laboris qui consequat eu minim ipsum
         nulla culpa aliquip ad.
       </div>
 
-      <div class="flex justify-center -space-x-24">
-        <div class="mix-blend-multiply bg-red-500">
+      <div className="flex justify-center -space-x-24">
+        <div className="mix-blend-multiply bg-red-500">
           Id ex deserunt velit excepteur deserunt tempor eu aliquip ipsum labore
           laboris.
         </div>
-        <div class="mix-blend-multiply bg-blue-500">
+        <div className="mix-blend-multiply bg-blue-500">
           Adipisicing voluptate magna aute sunt consequat irure sint.
         </div>
       </div>
 
-      <div class="w-96 m-5 p-5 border-2">
+      <div className="w-96 m-5 p-5 border-2">
         Amet commodo nisi quis irure velit Lorem enim anim commodo sunt aliquip
         officia quis.
       </div>
-      <div class="w-96 m-5 p-5 border-x-4">
+      <div className="w-96 m-5 p-5 border-x-4">
         Amet commodo nisi quis irure velit Lorem enim anim commodo sunt aliquip
         officia quis.
       </div>
-      <div class="w-96 m-5 p-5 border-y-8">
+      <div className="w-96 m-5 p-5 border-y-8">
         Amet commodo nisi quis irure velit Lorem enim anim commodo sunt aliquip
         officia quis.
       </div>
-      <div class="w-96 m-5 p-5 border-4 rounded-xl">
+      <div className="w-96 m-5 p-5 border-4 rounded-xl">
         Dolore deserunt sunt qui ut quis sunt anim do nostrud minim fugiat
         minim.
       </div>
 
-      <button class="m-5 outline outline-4">Click</button>
+      <button className="m-5 outline outline-4">Click</button>
 
-      <div class="blur-sm">
+      <div className="blur-sm">
         Do elit adipisicing cupidatat dolor excepteur nulla in incididunt.
       </div>
 
-      <div class="h-16 bg-red-500 brightness-50">Brightness 0</div>
-      <div class="h-16 bg-red-500 brightness-100">Brightness 100</div>
-      <div class="h-16 bg-red-500 brightness-200">Brightness 200</div>
+      <div className="h-16 bg-red-500 brightness-50">Brightness 0</div>
+      <div className="h-16 bg-red-500 brightness-100">Brightness 100</div>
+      <div className="h-16 bg-red-500 brightness-200">Brightness 200</div>
 
-      <div class="h-16 bg-red-500 contrast-0">Contrast 0</div>
-      <div class="h-16 bg-red-500 contrast-50">Contrast 50</div>
-      <div class="h-16 bg-red-500 contrast-100">Contrast 200</div>
-      <div class="h-16 bg-red-500 contrast-200">Contrast 200</div>
+      <div className="h-16 bg-red-500 contrast-0">Contrast 0</div>
+      <div className="h-16 bg-red-500 contrast-50">Contrast 50</div>
+      <div className="h-16 bg-red-500 contrast-100">Contrast 200</div>
+      <div className="h-16 bg-red-500 contrast-200">Contrast 200</div>
 
-      <div class="h-16 bg-red-500 grayscale">Grayscale</div>
+      <div className="h-16 bg-red-500 grayscale">Grayscale</div>
 
-      <div class="h-16 bg-red-500 invert">Invert</div>
-      <div class="h-16 bg-red-500 sepia">Sepia</div>
+      <div className="h-16 bg-red-500 invert">Invert</div>
+      <div className="h-16 bg-red-500 sepia">Sepia</div>
 
-      <div class="h-16 bg-red-500 hue-rotate-0">Hue Rotate 0</div>
-      <div class="h-16 bg-red-500 hue-rotate-90">Hue Rotate 90</div>
-      <div class="h-16 bg-red-500 hue-rotate-180">Hue Rotate 180</div>
+      <div className="h-16 bg-red-500 hue-rotate-0">Hue Rotate 0</div>
+      <div className="h-16 bg-red-500 hue-rotate-90">Hue Rotate 90</div>
+      <div className="h-16 bg-red-500 hue-rotate-180">Hue Rotate 180</div>
 
       <button
-        class="bg-black text-white rounded-lg m-5 p-5
+        className="bg-black text-white rounded-lg m-5 p-5
        hover:bg-blue-200 
        hover:text-black"
       >
@@ -199,46 +199,60 @@ export default function Home() {
       </button>
 
       <button
-        class="bg-black text-white rounded-lg m-5 p-5
+        className="bg-black text-white rounded-lg m-5 p-5
        focus:bg-blue-200 focus:text-black"
       >
         Click
       </button>
 
       <button
-        class="bg-black text-white rounded-lg m-5 p-5
+        className="bg-black text-white rounded-lg m-5 p-5
        active:bg-blue-200 active:text-black"
       >
         Click
       </button>
 
       <div
-        class="group block max-w-xs mx-auto rounded-lg p-6 bg-white shadow-lg space-y-3 
+        className="group block max-w-xs mx-auto rounded-lg p-6 bg-white shadow-lg space-y-3 
       hover:bg-red-500"
       >
-        <h3 class="hover:text-white">Title</h3>
-        <p class="group-hover:text-white">
+        <h3 className="hover:text-white">Title</h3>
+        <p className="group-hover:text-white">
           Laboris tempor ex nisi deserunt labore anim et do in officia sint
           laborum.
         </p>
       </div>
 
       <ul>
-        <li class="first:bg-red-500">Item 1</li>
-        <li class="first:bg-red-500">Item 2</li>
-        <li class="first:bg-red-500 even:bg-red-200 odd:bg-red-700">Item 3</li>
-        <li class="first:bg-red-500 even:bg-red-200 odd:bg-red-700">Item 4</li>
-        <li class="first:bg-red-500 even:bg-red-200 odd:bg-red-700">Item 5</li>
+        <li className="first:bg-red-500">Item 1</li>
+        <li className="first:bg-red-500">Item 2</li>
+        <li className="first:bg-red-500 even:bg-red-200 odd:bg-red-700">Item 3</li>
+        <li className="first:bg-red-500 even:bg-red-200 odd:bg-red-700">Item 4</li>
+        <li className="first:bg-red-500 even:bg-red-200 odd:bg-red-700">Item 5</li>
       </ul>
 
-      <select class="border-4 border-red-500">
+      <select className="border-4 border-red-500">
         <option value="1">True</option>
         <option value="0">False</option>
       </select>
-      <select class="border-4 border-green-500 appearance-none">
+      <select className="border-4 border-green-500 appearance-none">
         <option value="1">True</option>
         <option value="0">False</option>
       </select>
+
+      <div className="w-36 h-36 bg-red-500 cursor-pointer"></div>
+
+      <div className="select-none">Select None</div>
+      <div className="select-text">Select Text</div>
+      <div className="select-all">Select All</div>
+      <div className="select-auto">Select Auto</div>
+
+      <a href="#bottom" className="block m-6 border-4 text-center">Go to Bottom</a>
+      <div className="h-[1000px] bg-black"></div>
+      <div id="bottom" className="h-4 text-center">Bottom</div>
+
+
+
     </div>
   );
 }

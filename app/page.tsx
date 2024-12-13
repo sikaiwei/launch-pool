@@ -226,9 +226,15 @@ export default function Home() {
       <ul>
         <li className="first:bg-red-500">Item 1</li>
         <li className="first:bg-red-500">Item 2</li>
-        <li className="first:bg-red-500 even:bg-red-200 odd:bg-red-700">Item 3</li>
-        <li className="first:bg-red-500 even:bg-red-200 odd:bg-red-700">Item 4</li>
-        <li className="first:bg-red-500 even:bg-red-200 odd:bg-red-700">Item 5</li>
+        <li className="first:bg-red-500 even:bg-red-200 odd:bg-red-700">
+          Item 3
+        </li>
+        <li className="first:bg-red-500 even:bg-red-200 odd:bg-red-700">
+          Item 4
+        </li>
+        <li className="first:bg-red-500 even:bg-red-200 odd:bg-red-700">
+          Item 5
+        </li>
       </ul>
 
       <select className="border-4 border-red-500">
@@ -247,20 +253,36 @@ export default function Home() {
       <div className="select-all">Select All</div>
       <div className="select-auto">Select Auto</div>
 
-      <a href="#bottom" className="block m-6 border-4 text-center">Go to Bottom</a>
+      <a href="#bottom" className="block m-6 border-4 text-center">
+        Go to Bottom
+      </a>
       <div className="h-[1000px] bg-black"></div>
-      <div id="bottom" className="h-4 text-center">Bottom</div>
+      <div id="bottom" className="h-4 text-center">
+        Bottom
+      </div>
 
       <div className="columns-xs">
-        <div className="w-full m-2 border-4 border-red-500">Proident ipsum consequat dolor deserunt.</div>
-        <div className="w-full m-2 border-4 border-yellow-500">Proident ipsum consequat dolor deserunt.</div>
-        <div className="w-full m-2 border-4 border-green-500">Proident ipsum consequat dolor deserunt.</div>
-        <div className="w-full m-2 border-4 border-blue-500">Proident ipsum consequat dolor deserunt.</div>
+        <div className="w-full m-2 border-4 border-red-500">
+          Proident ipsum consequat dolor deserunt.
+        </div>
+        <div className="w-full m-2 border-4 border-yellow-500">
+          Proident ipsum consequat dolor deserunt.
+        </div>
+        <div className="w-full m-2 border-4 border-green-500">
+          Proident ipsum consequat dolor deserunt.
+        </div>
+        <div className="w-full m-2 border-4 border-blue-500">
+          Proident ipsum consequat dolor deserunt.
+        </div>
       </div>
 
       <div className="columns-1">
-        <div className="w-60 m-2 border-4 border-red-500 aspect-square">Proident ipsum consequat dolor deserunt.</div>
-        <div className="w-60 m-2 border-4 border-blue-500 aspect-video">Proident ipsum consequat dolor deserunt.</div>
+        <div className="w-60 m-2 border-4 border-red-500 aspect-square">
+          Proident ipsum consequat dolor deserunt.
+        </div>
+        <div className="w-60 m-2 border-4 border-blue-500 aspect-video">
+          Proident ipsum consequat dolor deserunt.
+        </div>
       </div>
 
       <div className="flex w-full h-72 bg-black ">
@@ -294,7 +316,9 @@ export default function Home() {
       <div className="flex flex-wrap w-full h-72 bg-black items-center justify-around">
         <div className="p-10 border border-red-500 bg-red-200">1</div>
         <div className="p-10 border border-yellow-500 bg-yellow-200">2</div>
-        <div className="p-10 w-[300px] border border-green-500 bg-green-200">3</div>
+        <div className="p-10 w-[300px] border border-green-500 bg-green-200">
+          3
+        </div>
         <div className="p-10 border border-blue-500 bg-blue-200">4</div>
       </div>
 
@@ -311,11 +335,79 @@ export default function Home() {
         <div className="p-10 border border-green-500 bg-green-200">3</div>
         <div className="p-10 border border-blue-500 bg-blue-200">4</div>
       </div>
+      {/* 调整顺序 */}
+      <div className="flex flex-col w-72 bg-black gap-4">
+        <div className="p-10 border border-red-500 bg-red-200 order-2">1</div>
+        <div className="p-10 border border-yellow-500 bg-yellow-200 order-1">
+          2
+        </div>
+        <div className="p-10 border border-green-500 bg-green-200 order-4">
+          3
+        </div>
+        <div className="p-10 border border-blue-500 bg-blue-200 order-3">4</div>
+      </div>
 
+      {/* 放大与缩小 */}
+      <div className="flex w-full bg-black">
+        <div className="p-10 w-64 border border-red-500 bg-red-200">1</div>
+        <div className="flex-none p-10 w-64 border border-yellow-500 bg-yellow-200">
+          2
+        </div>
+        <div className="p-10 w-64 border border-green-500 bg-green-200">3</div>
+        <div className="p-10      border border-blue-500 bg-blue-200">4</div>
+        <div className="p-10 w-64 border border-gray-500 bg-gray-200">5</div>
+      </div>
 
+      {/* grid */}
+      <div className="grid grid-cols-3 gap-2">
+        <div className="p-10 border-4 border-red-200 bg-blue-200">Item 1</div>
+        <div className="p-10 border-4 border-red-200 bg-blue-200">Item 2</div>
+        <div className="p-10 border-4 border-red-200 bg-blue-200">Item 3</div>
+        <div className="p-10 border-4 border-red-200 bg-blue-200">Item 4</div>
+        <div className="p-10 border-4 border-red-200 bg-blue-200">Item 5</div>
+        <div className="p-10 border-4 border-red-200 bg-blue-200">Item 6</div>
+        <div className="p-10 border-4 border-red-200 bg-blue-200">Item 7</div>
+        <div className="p-10 border-4 border-red-200 bg-blue-200">Item 8</div>
+        {/* <div class="p-10 border-4 border-red-200 bg-blue-200">Item 9</div> */}
+      </div>
 
+      <div className="grid grid-cols-2 grid-rows-4 gap-2  bg-gray-200">
+        <div className="p-10 border-4 border-red-200 bg-blue-200">Item 1</div>
+        <div className="p-10 border-4 border-red-200 bg-blue-200">Item 2</div>
+        <div className="p-10 border-4 border-red-200 bg-blue-200">Item 3</div>
+        <div className="p-10 border-4 border-red-200 bg-blue-200">Item 4</div>
+        <div className="p-10 border-4 border-red-200 bg-blue-200">Item 5</div>
+        <div className="p-10 border-4 border-red-200 bg-blue-200">Item 6</div>
+        <div className="p-10 border-4 border-red-200 bg-blue-200">Item 7</div>
+        <div className="p-10 border-4 border-red-200 bg-blue-200">Item 8</div>
+        <div className="p-10 border-4 border-red-200 bg-blue-200">Item 9</div>
+      </div>
 
+      {/* 跨行跨列 */}
+      <div className="grid grid-cols-3 gap-2">
+        <div className=" p-10 border-4 border-red-200 bg-blue-200">Item 1</div>
+        <div className="md:col-span-2 p-10 border-4 border-red-200 bg-blue-200">
+          Item 2
+        </div>
+      </div>
+      {/* 过度 */}
+      <button className="m-4 px-8 py-4 text-white bg-blue-200 rounded hover:bg-blue-700">
+        Click
+      </button>
+      <button
+        class="m-4 px-8 py-4 text-white bg-blue-200 rounded
+       hover:bg-blue-700 transition-colors duration-200 ease-in delay-00"
+      >
+        Click
+      </button>
+      <button
+        class="m-4 px-8 py-4 text-white bg-blue-200 rounded 
+        hover:scale-50 hover:rotate-12 hover:translate-x-2 hover:skew-x-12 duration-700"
+      >
+        Click
+      </button>
 
+      {/* 动画类与关键帧 */}
     </div>
   );
 }

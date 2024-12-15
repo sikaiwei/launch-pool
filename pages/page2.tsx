@@ -12,7 +12,7 @@ export default function Page2() {
       </div>
       {/* <input type="text" class="border border-green-500" /> */}
       <div
-        className="grid h-screen place-content-center
+        className="grid  place-content-center
       bg-neutral-100"
       >
         <SlideTabs />
@@ -27,24 +27,46 @@ const SlideTabs = () => {
     width: 0,
     opacity: 0,
   });
+  const [activePosition, setActivePosition] = useState({
+    left: 0,
+    width: 0,
+    opacity: 0,
+  });
 
   return (
     <ul
+      onMouseLeave={() => {
+        setPosition((pv) => ({
+          ...pv,
+          opacity: 0,
+        }));
+      }}
       className="relative mx-auto flex w-fit rounded-full
     border-2 border-black bg-white p-1"
     >
-      <Tab setPosition={setPosition}>Home</Tab>
-      <Tab setPosition={setPosition}>Pricing</Tab>
-      <Tab setPosition={setPosition}>Features</Tab>
-      <Tab setPosition={setPosition}>Docs</Tab>
-      <Tab setPosition={setPosition}>Blog</Tab>
+      <Tab setPosition={setPosition} setActivePosition={setActivePosition}>
+        Home
+      </Tab>
+      <Tab setPosition={setPosition} setActivePosition={setActivePosition}>
+        Pricing
+      </Tab>
+      <Tab setPosition={setPosition} setActivePosition={setActivePosition}>
+        Features
+      </Tab>
+      <Tab setPosition={setPosition} setActivePosition={setActivePosition}>
+        Docs
+      </Tab>
+      <Tab setPosition={setPosition} setActivePosition={setActivePosition}>
+        Blog
+      </Tab>
 
       <Cursor position={position} />
+      <Cursor position={activePosition} />
     </ul>
   );
 };
 
-const Tab = ({ children, setPosition }) => {
+const Tab = ({ children, setPosition, setActivePosition }) => {
   const ref = useRef(null);
   return (
     <li
@@ -58,7 +80,7 @@ const Tab = ({ children, setPosition }) => {
         console.log(data);
         const { width } = ref.current.getBoundingClientRect();
 
-        setPosition({
+        setActivePosition({
           width,
           opacity: 1,
           left: ref.current.offsetLeft,
@@ -74,7 +96,7 @@ const Tab = ({ children, setPosition }) => {
 
         setPosition({
           width,
-          opacity: 1,
+          opacity: 0.2,
           left: ref.current.offsetLeft,
         });
       }}

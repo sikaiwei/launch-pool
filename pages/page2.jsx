@@ -5,14 +5,14 @@ import { motion } from "motion/react";
 export default function Page2() {
   return (
     <div>
-      <div className="flex space-x-2  text-red-400 drop-shadow-sm  ">
+      {/* <div className="flex space-x-2  text-red-400 drop-shadow-sm  ">
         <p className="  ">Item 1</p>
         <div>Item 2</div>
         <div>Item 3</div>
-      </div>
+      </div> */}
       {/* <input type="text" class="border border-green-500" /> */}
       <div
-        className="grid  place-content-center
+        className="grid  place-content-center 
       bg-neutral-100"
       >
         <SlideTabs />
@@ -41,7 +41,7 @@ const SlideTabs = () => {
           opacity: 0,
         }));
       }}
-      className="relative mx-auto flex w-fit rounded-full
+      className="relative mx-auto flex w-fit rounded-full 
     border-2 border-black bg-white p-1"
     >
       <Tab setPosition={setPosition} setActivePosition={setActivePosition}>

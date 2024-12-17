@@ -1,5 +1,10 @@
+"use client"
 import "./styles.css";
 
 export default function Btn() {
-  return <button>Hover me!</button>;
+  return (
+    <div>
+      <button  >Hover me!</button>
+    </div>
+  );
 }

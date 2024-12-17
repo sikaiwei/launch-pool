@@ -42,7 +42,7 @@ button::after {
   mask-composite: exclude;
   -webkit-mask-composite: destination-out;
   filter: hue-rotate(0);
-  animation: rotate-hue linear 500ms infinite;
+  animation: rotate-hue linear 5000ms infinite;
   animation-play-state: paused;
 }
 

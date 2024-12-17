@@ -1,14 +1,11 @@
-"use client"
-import "./styles.css";
+"use client";
+import style from "./styles.module.css";
 
 export default function BtnMotionCss() {
-    return (
-        /* From Uiverse.io by MuhammadHasann */
-        <view class="btnBlock">
-            <view class="btnBian">
-
-            </view>
-            <view class="btn">诊疗之旅</view>
-        </view>
-    )
+  return (
+    /* From Uiverse.io by MuhammadHasann */
+    <div className="bg-black p-12 w-2/6">
+      <button className={style.button}>边框按钮</button>
+    </div>
+  );
 }

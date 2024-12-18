@@ -1,10 +1,13 @@
 "use client";
-import "./styles.css";
+import style from "./styles.module.css";
 
 export default function Btn() {
+  const delay = -2 * 0.5 + 's';
   return (
     <div>
-      <button>Hover me!</button>
-    </div>
+      <button className={style.movingButton}>Hover me!</button>
+      <button className={style.movingButton} style={{ animationDelay: delay }}>Hover me!</button>
+      <button className={style.movingButton}>Hover me!</button>
+    </div >
   );
 }

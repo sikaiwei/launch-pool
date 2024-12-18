@@ -5,6 +5,8 @@
   border: none;
   background: transparent;
   color: #30b8ce;
+  text-shadow: 10px 10px 10px #e42525;
+  /* mix-blend-mode: difference; */
   font-size: 16px;
   font-weight: bold;
   border-radius: 5px;
@@ -30,7 +32,7 @@
   left: 50%;
   top: 50%;
   /* 添加渐变增强美感 */
-  background: linear-gradient(180deg, #111111, hwb(40 99% 0%));
+  background: linear-gradient(270deg, #111111, hwb(40 99% 0%));
   z-index: -2;
   animation: rotation 5s linear infinite;
   transform-origin: left top;

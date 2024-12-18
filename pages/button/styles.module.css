@@ -1,0 +1,26 @@
+.movingButton {
+  /* 基本的按钮样式，可根据需求调整 */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #30b8ce;
+  color: white;
+  cursor: pointer;
+  /* 添加动画，指定动画名称、持续时间、运动曲线以及无限循环 */
+  animation: moveUpDown 5s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+  0% {
+      /* 起始位置，在原始位置，这里可以设置top等定位属性来控制具体位置 */
+      transform: translateY(0);
+  }
+  50% {
+      /* 向上移动一定距离，这里以向上移动10px为例，可以按需调整数值 */
+      transform: translateY(-10px);
+  }
+  100% {
+      /* 回到原始位置 */
+      transform: translateY(0);
+  }
+}

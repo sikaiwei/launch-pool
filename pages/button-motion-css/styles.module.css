@@ -34,7 +34,7 @@
   left: 50%;
   top: 50%;
   /* 添加渐变增强美感 */
-  background: linear-gradient(270deg, #111111, hwb(40 99% 0%));
+  background: linear-gradient(270deg, #ffffff, #ff00d4);
   z-index: -2;
   animation: rotation 5s linear infinite;
   transform-origin: left top;

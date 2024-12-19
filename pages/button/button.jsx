@@ -1,8 +1,18 @@
 "use client";
 import style from "./styles.module.css";
 import { motion } from "motion/react";
+import { useEffect } from "react";
+import { themeChange } from "theme-change";
 
 export default function Btn() {
+  useEffect(() => {
+    /* Sets the data-theme attribute on html tag */
+    document.documentElement.setAttribute(
+      "data-theme",
+      localStorage.getItem("theme") === "dark" ? "dark" : "light"
+    );
+  }, []);
+
   const delay = -2 * 0.5 + "s";
   return (
     <>
@@ -94,6 +104,32 @@ export default function Btn() {
             </div>
           </div>
         </dialog>
+
+        <label className="swap">
+          <input type="checkbox" />
+          <div className="swap-on">ON</div>
+          <div className="swap-off">OFF</div>
+        </label>
+
+        <input
+          type="checkbox"
+          value="synthwave"
+          className="toggle theme-controller"
+        />
+
+        <input
+          type="checkbox"
+          className="toggle"
+          defaultChecked={
+            typeof window !== "undefined" &&
+            localStorage.getItem("theme") === "dark"
+          }
+          onClick={(e) => {
+            let newTheme = e.target.checked ? "dark" : "light";
+            localStorage.setItem("theme", newTheme);
+            document.documentElement.setAttribute("data-theme", newTheme);
+          }}
+        />
       </div>
     </>
   );

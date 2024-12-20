@@ -12,7 +12,7 @@ export default function Home() {
       <Btn />
       <Loader />
       <BtnMotionCss />
-      <article class="prose">
+      <article className="prose">
         <h1>Garlic bread with cheese: What the science tells us</h1>
         <p>
           For years parents have espoused the health benefits of eating garlic bread with cheese to their

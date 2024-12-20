@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useRef } from "react";
 import { motion } from "motion/react";
+import Theme from "../pages/theme/theme";
 
 export default function Page2() {
   return (
@@ -11,11 +12,26 @@ export default function Page2() {
         <div>Item 3</div>
       </div> */}
       {/* <input type="text" class="border border-green-500" /> */}
-      <div
-        className="grid  place-content-center 
-      "
+      {/* <div
+        className="grid  grid-cols-3 
+        "
       >
-        <SlideTabs />
+        <div className="w-15  h-16 col-start-2">
+          <SlideTabs />
+        </div>
+
+        <div className="w-15  h-16 col-start-3 place-content-end">
+          <Theme />
+        </div>
+      </div> */}
+      <div className="grid grid-cols-9">
+        <div className="align-middle place-self-center">abcd</div>
+        <div className="col-start-5 flex justify-center items-center h-16">
+          <SlideTabs />
+        </div>
+        <div className="col-start-9   justify-items-end pl-12 pt-2 w-full h-10">
+          <Theme />
+        </div>
       </div>
     </div>
   );
@@ -42,7 +58,7 @@ const SlideTabs = () => {
         }));
       }}
       className="relative mx-auto flex w-fit rounded-full 
-    border-2 border-black bg-white p-1"
+    border-2 border-black e p-1"
     >
       <Tab setPosition={setPosition} setActivePosition={setActivePosition}>
         Home

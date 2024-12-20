@@ -2,7 +2,7 @@
 import style from "./styles.module.css";
 import { motion } from "motion/react";
 import { useEffect } from "react";
-import { themeChange } from "theme-change";
+// import { themeChange } from "theme-change";
 
 export default function Btn() {
   useEffect(() => {
@@ -115,6 +115,7 @@ export default function Btn() {
           type="checkbox"
           value="synthwave"
           className="toggle theme-controller"
+          data-set-theme="dark"
         />
 
         <input
@@ -130,7 +131,11 @@ export default function Btn() {
             document.documentElement.setAttribute("data-theme", newTheme);
           }}
         />
+
+
       </div>
+
+
     </>
   );
 }

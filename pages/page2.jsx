@@ -13,7 +13,7 @@ export default function Page2() {
       {/* <input type="text" class="border border-green-500" /> */}
       <div
         className="grid  place-content-center 
-      bg-neutral-100"
+      "
       >
         <SlideTabs />
       </div>

@@ -1,22 +1,26 @@
 "use client";
 import React from "react";
 import styled from "styled-components";
+import Nav from "../../pages/nav";
 
 const Loader = () => {
   return (
-    <StyledWrapper>
-      {/* <div className="terminal-loader"> */}
-      {/* <div className="terminal-header"> */}
-      {/* <div className="terminal-title"></div> */}
-      {/* <div className="terminal-controls"> */}
-      {/* <div className="control close" /> */}
-      {/* <div className="control minimize" /> */}
-      {/* <div className="control maximize" /> */}
-      {/* </div> */}
-      {/* </div> */}
-      <div className="text">please wait..., rs will come soon...</div>
-      {/* </div> */}
-    </StyledWrapper>
+    <div>
+      <Nav />
+      <StyledWrapper>
+        {/* <div className="terminal-loader"> */}
+        {/* <div className="terminal-header"> */}
+        {/* <div className="terminal-title"></div> */}
+        {/* <div className="terminal-controls"> */}
+        {/* <div className="control close" /> */}
+        {/* <div className="control minimize" /> */}
+        {/* <div className="control maximize" /> */}
+        {/* </div> */}
+        {/* </div> */}
+        <div className="text">please wait..., rs will come soon...</div>
+        {/* </div> */}
+      </StyledWrapper>
+    </div>
   );
 };
 

@@ -2,6 +2,7 @@
 import React, { useState, useRef } from "react";
 import { motion } from "motion/react";
 import Theme from "../pages/theme/theme";
+import Link from "next/link";
 
 export default function Page2() {
   return (
@@ -61,13 +62,13 @@ const SlideTabs = () => {
      e p-1"
     >
       <Tab setPosition={setPosition} setActivePosition={setActivePosition}>
-        Home
+        <Link href="/">Home</Link>
       </Tab>
       <Tab setPosition={setPosition} setActivePosition={setActivePosition}>
-        Pricing
+        <Link href="/typeing/">typeing</Link>
       </Tab>
       <Tab setPosition={setPosition} setActivePosition={setActivePosition}>
-        Features
+        <Link href="/button/button">button</Link>
       </Tab>
       <Tab setPosition={setPosition} setActivePosition={setActivePosition}>
         Docs

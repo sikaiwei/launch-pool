@@ -2,7 +2,7 @@
 import Page2 from "../pages/page2";
 import Nav from "../pages/nav";
 import Btn from "../pages/button/button";
-import Loader from "../pages/typeing/type";
+import Loader from "../pages/typeing/page";
 import BtnMotionCss from "../pages/button-motion-css/button-motion";
 
 export default function Home() {

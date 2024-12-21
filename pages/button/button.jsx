@@ -25,7 +25,9 @@ export default function Btn() {
       </div>
 
       <div className="grid grid-cols-7 gap-5">
-        <button className="btn btn-active">Default</button>
+        <button className="btn btn-active w-1/2 radio-success place-self-end rounded-full ">
+          Default
+        </button>
         <button className="btn btn-active btn-neutral">Neutral</button>
         <button className="btn btn-active btn-primary">Primary</button>
         <button className="btn btn-active btn-secondary">Secondary</button>
@@ -106,7 +108,7 @@ export default function Btn() {
         <input
           type="checkbox"
           value="synthwave"
-          className="toggle theme-controller"
+          className="toggle theme-controller place-self-center"
           data-set-theme="dark"
         />
       </div>

@@ -24,16 +24,16 @@ export default function Page2() {
           <Theme />
         </div>
       </div> */}
-      <div className="grid grid-cols-9">
-        <div className="align-middle place-self-center">abcd</div>
-        <div className="col-start-5 flex justify-center items-center h-16">
-          <SlideTabs />
-        </div>
-        <div className="col-start-9   justify-items-end pl-12 pt-2 w-full h-10">
-          <Theme />
-        </div>
-      </div>
+      {/* <div className="grid grid-cols-9"> */}
+      {/* <div className="align-middle place-self-center">abcd</div> */}
+      {/* <div className="col-start-5 flex justify-center items-center h-16"> */}
+      <SlideTabs />
+      {/* </div> */}
+      {/* <div className="col-start-9   justify-items-end pl-12 pt-2 w-full h-10"> */}
+      {/* <Theme /> */}
+      {/* </div> */}
     </div>
+    // </div>
   );
 }
 
@@ -58,7 +58,7 @@ const SlideTabs = () => {
         }));
       }}
       className="relative mx-auto flex w-fit rounded-full 
-    border-2 border-black e p-1"
+     e p-1"
     >
       <Tab setPosition={setPosition} setActivePosition={setActivePosition}>
         Home

@@ -1,9 +1,7 @@
 "use client";
 import style from "./styles.module.css";
 import { motion } from "motion/react";
-import { useEffect } from "react";
 // import { themeChange } from "theme-change";
-import Nav from "../nav";
 
 export default function Btn() {
   const delay = -2 * 0.5 + "s";

@@ -66,7 +66,7 @@ const SlideTabs = () => {
           Home
         </Tab>
       </Link>
-      <Link href="/typeing/">
+      <Link href="/typeing">
         <Tab setPosition={setPosition} setActivePosition={setActivePosition}>
           typeing
         </Tab>

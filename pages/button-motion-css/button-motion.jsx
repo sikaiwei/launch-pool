@@ -7,6 +7,7 @@ export default function BtnMotionCss() {
     /* From Uiverse.io by MuhammadHasann */
     <div className="bg-black p-12 w-2/6">
       <button className={style.button}>边框按钮</button>
+      <button className={`${style.button} + btn btn-primary `}>Button</button>
     </div>
   );
 }

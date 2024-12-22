@@ -8,7 +8,6 @@ import BtnMotionCss from "../pages/button-motion-css/button-motion";
 export default function Home() {
   return (
     <div>
-      <Nav />
       {/* <Page2 /> */}
       <div className="h-4"></div>
       <Btn />

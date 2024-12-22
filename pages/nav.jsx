@@ -1,6 +1,7 @@
 "use client";
 import Theme from "../pages/theme/theme";
 import Page2 from "../pages/page2";
+import Link from "next/link";
 
 export default function Nav() {
   return (
@@ -46,7 +47,10 @@ export default function Nav() {
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <Link href="/" className="btn btn-ghost text-xl font-bold">
+          LaunchPool
+        </Link>
+        {/* <a className="btn btn-ghost text-xl">LaunchPool</a> */}
       </div>
       <div className="navbar-center  lg:flex">
         <Page2 />

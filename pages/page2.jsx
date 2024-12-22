@@ -61,15 +61,21 @@ const SlideTabs = () => {
       className="relative mx-auto flex w-fit rounded-full 
      e p-1"
     >
-      <Tab setPosition={setPosition} setActivePosition={setActivePosition}>
-        <Link href="/">Home</Link>
-      </Tab>
-      <Tab setPosition={setPosition} setActivePosition={setActivePosition}>
-        <Link href="/typeing/">typeing</Link>
-      </Tab>
-      <Tab setPosition={setPosition} setActivePosition={setActivePosition}>
-        <Link href="/button/button">button</Link>
-      </Tab>
+      <Link href="/">
+        <Tab setPosition={setPosition} setActivePosition={setActivePosition}>
+          Home
+        </Tab>
+      </Link>
+      <Link href="/typeing/">
+        <Tab setPosition={setPosition} setActivePosition={setActivePosition}>
+          typeing
+        </Tab>
+      </Link>
+      <Link href="/button/button">
+        <Tab setPosition={setPosition} setActivePosition={setActivePosition}>
+          button
+        </Tab>
+      </Link>
       <Tab setPosition={setPosition} setActivePosition={setActivePosition}>
         Docs
       </Tab>

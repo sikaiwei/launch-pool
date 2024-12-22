@@ -1,12 +1,10 @@
 "use client";
 import React from "react";
 import styled from "styled-components";
-import Nav from "../nav";
 
 const Loader = () => {
   return (
     <div>
-      <Nav />
       <StyledWrapper>
         {/* <div className="terminal-loader"> */}
         {/* <div className="terminal-header"> */}

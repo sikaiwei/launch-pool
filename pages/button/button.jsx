@@ -9,7 +9,6 @@ export default function Btn() {
   const delay = -2 * 0.5 + "s";
   return (
     <>
-      <Nav />
       <div className="grid grid-cols-5 gap-5">
         <motion.button
           // whileHover={{ scale: 1.03 }}

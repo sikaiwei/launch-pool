@@ -14,7 +14,6 @@ export default function Nav() {
   }, []);
   return (
     <div className="relative ">
-
       {/* <div ref={imgRef} > </div> */}
 
       {/* <div className="flex place-content-center"> */}
@@ -22,23 +21,21 @@ export default function Nav() {
       {isLoading ? (
         <>
           <div className="flex absolute w-full h-16 flex-row items-center gap-0 z-20 ">
-            <div className="skeleton flex items-center h-10 w-20"></div>
-            <div className="skeleton  w-full"></div>
-            <div className="skeleton  w-full"></div>
-            <div className="skeleton  w-full"></div>
-            <div className="skeleton h-10 w-full"></div>
-            <div className="skeleton h-10 w-full"></div>
-            <div className="skeleton h-10 w-full"></div>
-            <div className="skeleton h-10 w-full"></div>
-            <div className="skeleton h-10 w-full"></div>
-            <div className="skeleton  w-full"></div>
-            <div className="skeleton  w-full"></div>
-            <div className="skeleton h-14 w-full"></div>
-            <div className="skeleton h-14 w-full"></div>
+            <div className="skeleton  h-10 w-2/12"></div>
+            <div className="skeleton  w-2/12"></div>
+            <div className="skeleton h-10 w-1/12"></div>
+            <div className="skeleton h-10 w-1/12"></div>
+            <div className="skeleton h-10 w-1/12"></div>
+            <div className="skeleton h-10 w-1/12"></div>
+            <div className="skeleton h-10 w-1/12"></div>
+            <div className="skeleton  w-2/12"></div>
+            <div className="skeleton h-14 w-2/12"></div>
           </div>
           {/* <span className="loading loading-dots loading-lg absolute  left-1/2 place-self-center"></span> */}
         </>
-      ) : (<></>)}
+      ) : (
+        <></>
+      )}
       {/* </div> */}
       {/* // ) : ( */}
 
@@ -91,7 +88,10 @@ export default function Nav() {
               </li>
             </ul>
           </div>
-          <Link href="/" className="btn btn-ghost text-xl font-bold">
+          <Link
+            href="/"
+            className="btn btn-ghost text-xl font-bold text-primary"
+          >
             LaunchPool
           </Link>
           {/* <a className="btn btn-ghost text-xl">LaunchPool</a> */}
@@ -100,7 +100,6 @@ export default function Nav() {
           <Page2 />
         </div>
         <div className="navbar-end ">
-
           <div className="join">
             <div className=" btn h-10  place-self-start join-item ">
               {/* <div className="  w-1/4 h-10 pb-2 place-self-start"> */}
@@ -108,7 +107,6 @@ export default function Nav() {
             </div>
             <a className="btn join-item">Button</a>
           </div>
-
         </div>
       </div>
     </div>

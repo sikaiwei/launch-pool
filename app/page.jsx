@@ -1,4 +1,4 @@
-"use client"
+"use client";
 // import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import Page2 from "../pages/page2";
@@ -15,42 +15,34 @@ export default function Home() {
       setIsLoading(false);
     }
   }, []);
-  // React.useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setIsLoading(false);
-  //   }, 500);
-  //   return () => clearTimeout(timer);
-  // }, []);
+
   return (
-    <div >
-      <div ref={imgRef} > </div>
-      {/* <Page2 /> */}
+    <div>
+      <div ref={imgRef}> </div>
       {isLoading ? (
         <div className="flex place-content-center">
-
           <span className="loading loading-dots loading-lg  place-self-center"></span>
         </div>
       ) : (
-        <div >
-
+        <div>
           <Btn />
           <Loader />
           <BtnMotionCss />
           <article className="prose">
             <h1>Garlic bread with cheese: What the science tells us</h1>
             <p>
-              For years parents have espoused the health benefits of eating garlic
-              bread with cheese to their children, with the food earning such an
-              iconic status in our culture that kids will often dress up as warm,
-              cheesy loaf for Halloween.
+              For years parents have espoused the health benefits of eating
+              garlic bread with cheese to their children, with the food earning
+              such an iconic status in our culture that kids will often dress up
+              as warm, cheesy loaf for Halloween.
             </p>
             <p>
-              But a recent study shows that the celebrated appetizer may be linked
-              to a series of rabies cases springing up around the country.
+              But a recent study shows that the celebrated appetizer may be
+              linked to a series of rabies cases springing up around the
+              country.
             </p>
           </article>
         </div>
-
       )}
     </div>
   );

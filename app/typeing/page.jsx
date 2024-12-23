@@ -1,34 +1,51 @@
 "use client";
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import styled from "styled-components";
 
 const Loader = () => {
+  const [isLoading, setIsLoading] = React.useState(true);
+  const imgRef = useRef(null);
+  useEffect(() => {
+    if (imgRef.current) {
+      setIsLoading(false);
+    }
+  }, []);
   const counter = 55;
   return (
     <div>
-      <StyledWrapper>
-        <div className="text">please wait..., rs will come soon...</div>
-      </StyledWrapper>
-
-      <div className="card glass w-96">
-        <figure>
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-            alt="car!"
-          />
-        </figure>
-        <div className="card-body">
-          <h2 className="card-title">Life hack</h2>
-          <p>How to park your car at your garage?</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Learn now!</button>
-          </div>
+      <div ref={imgRef}> </div>
+      {isLoading ? (
+        <div className="flex place-content-center">
+          <span className="loading loading-dots loading-lg  place-self-center"></span>
         </div>
-      </div>
+      ) : (
+        <div>
+          <StyledWrapper>
+            <div className="text">please wait..., rs will come soon...</div>
+          </StyledWrapper>
 
-      <span className="countdown font-mono text-6xl">
-        <span style={{ "--value": `${counter}` }}></span>
-      </span>
+          <div className="card glass w-96">
+            <figure>
+              <img
+                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                alt="car!"
+              />
+            </figure>
+            <div className="card-body">
+              <h2 className="card-title text-primary-content">Life hack</h2>
+              <p>How to park your car at your garage?</p>
+              <div className="card-actions justify-end">
+                <button className="btn btn-primary">Learn now!</button>
+              </div>
+            </div>
+          </div>
+
+          <span className="countdown font-mono text-6xl">
+            <span style={{ "--value": `${counter}` }}></span>
+          </span>
+        </div>
+      )}
+      ;
     </div>
   );
 };

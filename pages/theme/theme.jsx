@@ -19,8 +19,8 @@ export default function Theme() {
 
   return (
     <>
-      <div className="dropdown mb-72">
-        <div tabIndex={0} role="button" className="btn">
+      <div className=" dropdown mb-72">
+        <div tabIndex={0} role="button" className="btn ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="20"

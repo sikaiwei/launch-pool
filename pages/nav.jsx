@@ -101,7 +101,7 @@ export default function Nav() {
         </div>
         <div className="navbar-end ">
           <div className="join">
-            <div className=" btn h-10  place-self-start join-item ">
+            <div className=" btn h-10 px-0 place-self-start join-item ">
               {/* <div className="  w-1/4 h-10 pb-2 place-self-start"> */}
               <Theme />
             </div>

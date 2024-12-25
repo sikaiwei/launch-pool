@@ -6,6 +6,7 @@ import Nav from "../pages/nav";
 import Btn from "../pages/button/button";
 import Loader from "../pages/typeing/page";
 import BtnMotionCss from "../pages/button-motion-css/button-motion";
+import SquareLoader from "../components/loading/squreloading";
 
 export default function Home() {
   const [isLoading, setIsLoading] = React.useState(true);
@@ -20,11 +21,14 @@ export default function Home() {
     <div>
       <div ref={imgRef}> </div>
       {isLoading ? (
-        <div className="flex place-content-center">
+        <div className="flex  place-content-center h-3/4">
+
           <span className="loading loading-dots loading-lg  place-self-center"></span>
         </div>
       ) : (
         <div>
+          <SquareLoader />
+
           <Btn />
           <Loader />
           <BtnMotionCss />

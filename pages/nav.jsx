@@ -105,7 +105,7 @@ export default function Nav() {
               {/* <div className="  w-1/4 h-10 pb-2 place-self-start"> */}
               <Theme />
             </div>
-            <a className="btn join-item">Button</a>
+            <a className="btn join-item">SETTING</a>
           </div>
         </div>
       </div>

@@ -1,7 +1,9 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+/* eslint-disable */
 import Image from "next/image";
+/* eslint-disable */
 import React, {
   createContext,
   useState,

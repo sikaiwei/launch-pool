@@ -27,51 +27,43 @@ const Loader = () => {
             <div className="text">please wait..., rs will come soon...</div>
           </StyledWrapper>
 
-          <div className="card glass w-96">
-            <figure>
-              <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                alt="car!"
-              />
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title text-primary-content">Life hack</h2>
-              <p>How to park your car at your garage?</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">Learn now!</button>
-              </div>
-            </div>
-          </div>
+
 
           <span className="countdown font-mono text-6xl">
             <span style={{ "--value": `${counter}` }}></span>
           </span>
 
           <div className="grid grid-cols-2">
+            <div className="card  w-96 h-fit place-self-center">
+              <figure >
+                <img
+                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                  alt="car!"
+                />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title text-primary-content w-fit px-2 ">Life hack</h2>
+                <p >How to park your car at your garage?</p>
+                <div className="card-actions justify-end">
+                  <button className="btn btn-primary">Learn now!</button>
+                </div>
+              </div>
+            </div>
             <CardContainer className="inter-var">
               <CardBody className=" relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
                 <CardItem
                   translateZ="50"
-                  className="text-xl font-bold text-neutral-600 dark:text-white"
+                  className="text-xl font-bold "
                 >
                   Make things float in air
                 </CardItem>
                 <CardItem
-                  as="p"
                   translateZ="60"
-                  className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                  className=" text-sm max-w-sm mt-2 "
                 >
                   Hover over this card to unleash the power of CSS perspective
                 </CardItem>
-                <CardItem translateZ="100" className="w-full mt-4">
-                  <Image
-                    src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    height="1000"
-                    width="1000"
-                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-                    alt="thumbnail"
-                  />
-                </CardItem>
+
                 <CardItem translateZ="100" className="w-full mt-4">
                   <img
                     className="rounded-xl"
@@ -111,7 +103,6 @@ const Loader = () => {
           </div>
         </div>
       )}
-      ;
     </div>
   );
 };

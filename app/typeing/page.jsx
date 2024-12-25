@@ -27,40 +27,34 @@ const Loader = () => {
             <div className="text">please wait..., rs will come soon...</div>
           </StyledWrapper>
 
-
-
           <span className="countdown font-mono text-6xl">
             <span style={{ "--value": `${counter}` }}></span>
           </span>
 
           <div className="grid grid-cols-2">
             <div className="card  w-96 h-fit place-self-center">
-              <figure >
+              <figure>
                 <img
                   src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
                   alt="car!"
                 />
               </figure>
               <div className="card-body">
-                <h2 className="card-title text-primary-content w-fit px-2 ">Life hack</h2>
-                <p >How to park your car at your garage?</p>
+                <h2 className="card-title text-primary-content w-fit px-2 ">
+                  Life hack
+                </h2>
+                <p>How to park your car at your garage?</p>
                 <div className="card-actions justify-end">
-                  <button className="btn btn-primary">Learn now!</button>
+                  <button className="btn btn-primary ">Learn now!</button>
                 </div>
               </div>
             </div>
             <CardContainer className="inter-var">
               <CardBody className=" relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
-                <CardItem
-                  translateZ="50"
-                  className="text-xl font-bold "
-                >
+                <CardItem translateZ="50" className="text-xl font-bold ">
                   Make things float in air
                 </CardItem>
-                <CardItem
-                  translateZ="60"
-                  className=" text-sm max-w-sm mt-2 "
-                >
+                <CardItem translateZ="60" className=" text-sm max-w-sm mt-2 ">
                   Hover over this card to unleash the power of CSS perspective
                 </CardItem>
 

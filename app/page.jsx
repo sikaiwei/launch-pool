@@ -21,14 +21,12 @@ export default function Home() {
     <div>
       <div ref={imgRef}> </div>
       {isLoading ? (
-        <div className="flex  place-content-center h-3/4">
-
-          <span className="loading loading-dots loading-lg  place-self-center"></span>
+        <div className=" grid grid-rows-4 place-items-center place-content-center h-screen">
+          <span className="loading  loading-dots loading-lg  place-self-center"></span>
+          <SquareLoader />
         </div>
       ) : (
         <div>
-          <SquareLoader />
-
           <Btn />
           <Loader />
           <BtnMotionCss />

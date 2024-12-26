@@ -71,9 +71,9 @@ const SlideTabs = () => {
           typeing
         </Tab>
       </Link>
-      <Link href="/button/button">
+      <Link href="/makerdao">
         <Tab setPosition={setPosition} setActivePosition={setActivePosition}>
-          button
+          makerdao
         </Tab>
       </Link>
       <Tab setPosition={setPosition} setActivePosition={setActivePosition}>

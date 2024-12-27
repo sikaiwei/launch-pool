@@ -22,118 +22,63 @@ const Loader = () => {
         </div>
       ) : (
         <div>
-          <StyledWrapper>
-            <div className="text">please wait..., rs will come soon...</div>
-          </StyledWrapper>
-
-          <span className="countdown font-mono text-6xl">
-            <span style={{ "--value": `${counter}` }}></span>
-          </span>
-
-          <div className="grid grid-cols-2">
-            <div className="card  w-96 h-fit place-self-center">
-              <figure>
-                <img
-                  src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                  alt="car!"
+          <div className="navbar bg-base-100">
+            <div className="flex-1">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-9"
+                fill="none"
+                viewBox="0 0 38 20"
+                stroke="currentColor">
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M2.89486 4.10903V19.0599H0V1.69174C0 0.298924 1.59119 -0.495032 2.70406 0.342453L16.4546 10.6903C16.8786 11.0094 17.1279 11.5091 17.1279 12.0396V19.0599H14.2331V12.6415L2.89486 4.10903Z"
                 />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title text-primary-content w-fit px-2 ">
-                  Life hack
-                </h2>
-                <p>How to park your car at your garage?</p>
-                <div className="card-actions justify-end">
-                  <button className="btn btn-primary ">Learn now!</button>
-                </div>
-              </div>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M34.5319 4.10903V19.0599H37.4268V1.69174C37.4268 0.298924 35.8356 -0.495032 34.7227 0.342453L20.9721 10.6903C20.5482 11.0094 20.2988 11.5091 20.2988 12.0396V19.0599H23.1937V12.6415L34.5319 4.10903Z"
+                />
+              </svg>
+              <a className="btn btn-ghost text-xl">makerDao</a>
             </div>
-            <CardContainer className="inter-var">
-              <CardBody className=" relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
-                <CardItem translateZ="50" className="text-xl font-bold ">
-                  Make things float in air
-                </CardItem>
-                <CardItem translateZ="60" className=" text-sm max-w-sm mt-2 ">
-                  Hover over this card to unleash the power of CSS perspective
-                </CardItem>
+            <div className="flex-none">
+              <ul className="menu menu-horizontal px-1">
+                <li><a>Developer</a></li>
 
-                <CardItem translateZ="100" className="w-full mt-4">
-                  <img
-                    className="rounded-xl"
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="car!"
-                  />
-                </CardItem>
-
-                <div className="flex justify-between items-center mt-20">
-                  <CardItem
-                    translateZ={20}
-                    as={Link}
-                    href="https://twitter.com/mannupaaji"
-                    target="__blank"
-                    className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
-                  >
-                    Try now →
-                  </CardItem>
-                  <CardItem
-                    className="flex justify-between gap-3"
-                    translateZ={80}
-                  >
-                    <button className="btn btn-info">Info</button>
-                    <button className="btn btn-warning">Warning</button>
-                    <button className="btn btn-error">Error</button>
-                  </CardItem>
-                  <CardItem
-                    translateZ={20}
-                    as="button"
-                    className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-                  >
-                    Sign up
-                  </CardItem>
+                <div className="dropdown dropdown-hover place-self-center dropdown-end">
+                  <div tabIndex={0} role="button" className=" m-1">Leaning</div>
+                  <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-max p-2 shadow">
+                    <li><a>Item 1</a></li>
+                    <li><a>Item 2</a></li>
+                  </ul>
                 </div>
-              </CardBody>
-            </CardContainer>
+                <li><a>Funding</a></li>
+                <li><a>Communicatation</a></li>
+
+
+
+                <div className="dropdown dropdown-hover place-self-center dropdown-end">
+                  <div tabIndex={0} role="button" className=" m-1">Vote</div>
+                  <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-max p-2 shadow">
+                    <li><a>Item 1</a></li>
+                    <li><a>Item 2</a></li>
+                  </ul>
+                </div>
+
+              </ul>
+            </div>
           </div>
+
+
         </div>
       )}
     </div>
   );
 };
 
-const StyledWrapper = styled.div`
-  @keyframes blinkCursor {
-    50% {
-      border-right-color: transparent;
-    }
-  }
-
-  @keyframes typeAndDelete {
-    0%,
-    10% {
-      width: 0;
-    }
-    45%,
-    55% {
-      width: 15em;
-    } /* adjust width based on content */
-    90%,
-    100% {
-      width: 0;
-    }
-  }
-
-  .text {
-    color: red;
-    // mix-blend-mode: difference;
-    font-size: 1em;
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 0.2em solid black; /* Cursor */
-    animation: typeAndDelete 4s steps(11) infinite,
-      blinkCursor 0.5s step-end infinite alternate;
-    margin-top: 1.5em;
-  }
-`;
 
 export default Loader;

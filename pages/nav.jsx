@@ -39,7 +39,10 @@ export default function Nav() {
       {/* </div> */}
       {/* // ) : ( */}
 
-      <div ref={imgRef} className="navbar bg-base-100">
+      <div
+        ref={imgRef}
+        className="navbar bg-base-100 border-b-2  border-primary"
+      >
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

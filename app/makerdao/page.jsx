@@ -29,7 +29,8 @@ const Loader = () => {
                 className="h-5 w-9"
                 fill="none"
                 viewBox="0 0 38 20"
-                stroke="currentColor">
+                stroke="currentColor"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -47,38 +48,69 @@ const Loader = () => {
             </div>
             <div className="flex-none">
               <ul className="menu menu-horizontal px-1">
-                <li><a>Developer</a></li>
+                <li>
+                  <a>Developer</a>
+                </li>
 
                 <div className="dropdown dropdown-hover place-self-center dropdown-end">
-                  <div tabIndex={0} role="button" className=" m-1">Leaning</div>
-                  <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-max p-2 shadow">
-                    <li><a>Item 1</a></li>
-                    <li><a>Item 2</a></li>
+                  <div tabIndex={0} role="button" className=" m-1">
+                    Leaning
+                  </div>
+                  <ul
+                    tabIndex={0}
+                    className="dropdown-content menu bg-base-100 rounded-box z-[1] w-max p-2 shadow"
+                  >
+                    <li>
+                      <a>Item 1</a>
+                    </li>
+                    <li>
+                      <a>Item 2</a>
+                    </li>
                   </ul>
                 </div>
-                <li><a>Funding</a></li>
-                <li><a>Communicatation</a></li>
-
-
+                <li>
+                  <a>Funding</a>
+                </li>
+                <li>
+                  <a>Communicatation</a>
+                </li>
 
                 <div className="dropdown dropdown-hover place-self-center dropdown-end">
-                  <div tabIndex={0} role="button" className=" m-1">Vote</div>
-                  <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-max p-2 shadow">
-                    <li><a>Item 1</a></li>
-                    <li><a>Item 2</a></li>
+                  <div tabIndex={0} role="button" className=" m-1">
+                    Vote
+                  </div>
+                  <ul
+                    tabIndex={0}
+                    className="dropdown-content menu bg-base-100 rounded-box z-[1] w-max p-2 shadow"
+                  >
+                    <li>
+                      <a>Item 1</a>
+                    </li>
+                    <li>
+                      <a>Item 2</a>
+                    </li>
                   </ul>
                 </div>
-
               </ul>
             </div>
           </div>
 
-
+          <div className="grid grid-cols-12 py-32">
+            <div className="col-start-3 col-span-9">
+              <h1 className="text-5xl">一种更好的货币</h1>
+              <p className="text-xl my-3 ">任何人随时随地都能使用的数字货币</p>
+              <button className="btn  btn-accent rounded-full w-1/6 text-xl">
+                使用Dai
+              </button>
+              <a className="  cursor-pointer mx-8 w-1/6 text-xl text-accent">
+                ▶ 播放视频
+              </a>
+            </div>
+          </div>
         </div>
       )}
     </div>
   );
 };
-
 
 export default Loader;

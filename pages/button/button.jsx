@@ -30,7 +30,7 @@ export default function Btn() {
         <button className="btn btn-active btn-neutral">Neutral</button>
         <button className="btn btn-active btn-primary">Primary</button>
         <button className="btn btn-active btn-secondary">Secondary</button>
-        <button className="btn btn-active btn-accent">Accent</button>
+        <button className="btn btn-active hover:border-r-4 hover:border-b-4 hover:-translate-y-0.5 btn-accent">Accent</button>
         <button className="btn btn-active btn-ghost">Ghost</button>
         <button className="btn btn-active btn-link">Link</button>
 
@@ -38,7 +38,7 @@ export default function Btn() {
         <button className="btn btn-neutral">Neutral</button>
         <button className="btn btn-primary">Primary</button>
         <button className="btn btn-secondary">Secondary</button>
-        <button className="btn btn-accent border-r-4 border-b-4 border-black ">
+        <button className="btn btn-accent hover:border-r-4 hover:border-b-4 hover:-translate-y-0.5 border-black ">
           Accent
         </button>
         <button className="btn btn-ghost">Ghost</button>
